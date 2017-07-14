@@ -12,6 +12,9 @@
 			</frameset>
 		</framesets>
 	</sample>
+ 	<database>
+	    	<file>database/db-neutron-incoherent.xml</file>
+	</database>
 	<scattering>
 	    <type>self</type>		
 	    <dsp>

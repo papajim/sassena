@@ -1,0 +1,53 @@
+<root>
+
+  <sample>
+    <structure>
+      <file>sample.pdb</file>
+      <format>pdb</format>
+    </structure>
+    <framesets>
+      <frameset>
+        <file>sample.dcd</file>
+        <format>dcd</format>
+      </frameset>
+    </framesets>
+  </sample>
+
+  <database>
+    <file>database/db-xray-coherent.xml</file>
+  </database>
+
+  <scattering>
+    <type>all</type>
+    <dsp>
+      <type>square</type>
+    </dsp>
+    <vectors>
+      <type>scans</type>
+      <scans>
+        <scan>
+          <x>1.0</x> <y>0.0</y> <z>0.0</z>
+          <from>0.0</from>
+          <to>30.0</to>
+          <points>301</points>
+        </scan>
+      </scans>
+    </vectors>
+    <average>
+      <orientation>
+        <type>vectors</type>
+        <vectors>
+          <type>sphere</type>
+          <algorithm>boost_uniform_on_sphere</algorithm>
+          <resolution>1000</resolution>
+        </vectors>
+      </orientation>
+    </average>
+  </scattering>
+
+  <stage>
+    <threads>1</threads>
+  </stage>
+
+</root>
+

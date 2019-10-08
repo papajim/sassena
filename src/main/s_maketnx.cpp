@@ -198,7 +198,7 @@ int main(int argc,char* argv[]) {
 
 	if (vm.find("selection")!=vm.end()) {
 		std::vector<size_t> frame_selection;
-		ifstream selection_file(vm["selection"].as<string>().c_str());
+      std::ifstream selection_file(vm["selection"].as<string>().c_str());
 		size_t framenumber;
 		std::string line;
 		while (std::getline(selection_file,line)) {

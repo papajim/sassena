@@ -16,8 +16,8 @@ using namespace std;
 void Info::write(std::string word) {
 	boost::format linefmt("%|15|%|-65|");
 	linefmt % prefix % word;
-	clog << linefmt.str() << endl;
-	clog.flush();
+	cout << linefmt.str() << endl;
+	cout.flush();
 }
 
 void Warn::write(std::string word) {
